@@ -17,5 +17,6 @@ Pods/
 *.orig
 
 # Bundler
-vendor/
+.vendor/
+
 

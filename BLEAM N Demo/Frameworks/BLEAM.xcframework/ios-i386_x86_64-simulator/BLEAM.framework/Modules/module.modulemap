@@ -1,0 +1,11 @@
+framework module BLEAM {
+  umbrella header "BLEAM.h"
+
+  export *
+  module * { export * }
+}
+
+module BLEAM.Swift {
+    header "BLEAM-Swift.h"
+    requires objc
+}

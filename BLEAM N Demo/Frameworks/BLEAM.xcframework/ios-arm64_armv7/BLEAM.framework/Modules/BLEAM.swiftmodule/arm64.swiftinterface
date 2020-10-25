@@ -1,0 +1,90 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BLEAM
+@_exported import BLEAM
+import BackgroundTasks
+import CoreData
+import CoreLocation
+import Dispatch
+import Foundation
+import Swift
+import os.log
+import os
+@_hasMissingDesignatedInitializers final public class SDK {
+  convenience public init(configuration: BLEAM.Configuration, delegate: BLEAM.Delegate)
+  public static func setShared(_ sharedSDK: BLEAM.SDK)
+  public static func shared() -> BLEAM.SDK
+  @discardableResult
+  final public func synchronizedGeofences(completion: @escaping (Swift.Result<[BLEAM.Geofence], Swift.Error>) -> Swift.Void) -> BLEAM.Cancellable
+  @discardableResult
+  final public func synchronizeGeofences(completion: @escaping (Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void) -> BLEAM.Cancellable
+  @available(iOS 13.0, *)
+  final public func registerForBackgroundSynchronization()
+  @available(iOS 13.0, *)
+  final public func startBackgroundSynchronization()
+  @available(iOS 13.0, *)
+  final public func stopBackgroundSynchronization()
+  final public func startMonitoring(completion: @escaping (Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
+  final public func stopMonitoring()
+  @objc deinit
+}
+public protocol Cancellable : AnyObject {
+  func cancel()
+}
+public protocol Delegate : AnyObject {
+  func bleamSDK(_ sdk: BLEAM.SDK, didPredict position: Swift.Int, in geofence: BLEAM.Geofence)
+  func bleamSDK(_ sdk: BLEAM.SDK, didEnter geofence: BLEAM.Geofence)
+  func bleamSDK(_ sdk: BLEAM.SDK, didExit geofence: BLEAM.Geofence)
+}
+extension Delegate {
+  public func bleamSDK(_ sdk: BLEAM.SDK, didEnter geofence: BLEAM.Geofence)
+  public func bleamSDK(_ sdk: BLEAM.SDK, didExit geofence: BLEAM.Geofence)
+}
+final public class Configuration {
+  final public var synchronizationInterval: Swift.Double
+  final public var logger: BLEAM.Logger?
+  final public let appID: Swift.String
+  final public let appSecret: Swift.String
+  public init(appID: Swift.String, appSecret: Swift.String)
+  @objc deinit
+}
+public struct Geofence : Swift.Decodable, Swift.Equatable, Swift.CustomStringConvertible {
+  public let id: Swift.String
+  public let rootID: Swift.String
+  public let externalID: Swift.String
+  public let lat: Swift.Double
+  public let lng: Swift.Double
+  public let radius: Swift.Double
+  public var description: Swift.String {
+    get
+  }
+  public init(from decoder: Swift.Decoder) throws
+  public static func == (a: BLEAM.Geofence, b: BLEAM.Geofence) -> Swift.Bool
+}
+public enum LogLevel : Swift.String, Swift.Equatable {
+  case debug
+  case error
+  case info
+  case warning
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+final public class CompositeLogger : BLEAM.Logger {
+  public init(loggers: [BLEAM.Logger])
+  final public func log(_ level: BLEAM.LogLevel, _ message: Swift.String, _ tag: Swift.String?)
+  @objc deinit
+}
+public protocol Logger : AnyObject {
+  func log(_ level: BLEAM.LogLevel, _ message: Swift.String, _ tag: Swift.String?)
+}
+extension Logger {
+  public func d(_ message: Swift.String, _ tag: Swift.String? = nil)
+  public func e(_ message: Swift.String, _ tag: Swift.String? = nil)
+  public func i(_ message: Swift.String, _ tag: Swift.String? = nil)
+  public func w(_ message: Swift.String, _ tag: Swift.String? = nil)
+}
+extension BLEAM.LogLevel : Swift.Hashable {}
+extension BLEAM.LogLevel : Swift.RawRepresentable {}
