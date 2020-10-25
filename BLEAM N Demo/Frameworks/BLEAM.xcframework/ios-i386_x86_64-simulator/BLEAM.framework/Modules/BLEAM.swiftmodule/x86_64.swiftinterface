@@ -8,12 +8,14 @@ import CoreLocation
 import Dispatch
 import Foundation
 import Swift
+import UIKit
 import os.log
 import os
 @_hasMissingDesignatedInitializers final public class SDK {
   convenience public init(configuration: BLEAM.Configuration, delegate: BLEAM.Delegate)
   public static func setShared(_ sharedSDK: BLEAM.SDK)
   public static func shared() -> BLEAM.SDK
+  final public func processLaunchOptions(_ launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?)
   @discardableResult
   final public func synchronizedGeofences(completion: @escaping (Swift.Result<[BLEAM.Geofence], Swift.Error>) -> Swift.Void) -> BLEAM.Cancellable
   @discardableResult
@@ -24,6 +26,9 @@ import os
   final public func startBackgroundSynchronization()
   @available(iOS 13.0, *)
   final public func stopBackgroundSynchronization()
+  final public var isMonitoringActive: Swift.Bool {
+    get
+  }
   final public func startMonitoring(completion: @escaping (Swift.Result<Swift.Void, Swift.Error>) -> Swift.Void)
   final public func stopMonitoring()
   @objc deinit
