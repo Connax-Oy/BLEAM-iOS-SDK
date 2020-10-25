@@ -50,7 +50,8 @@ final public class Configuration {
   final public var logger: BLEAM.Logger?
   final public let appID: Swift.String
   final public let appSecret: Swift.String
-  public init(appID: Swift.String, appSecret: Swift.String)
+  final public let useDebugURL: Swift.Bool
+  public init(appID: Swift.String, appSecret: Swift.String, useDebugURL: Swift.Bool = false)
   @objc deinit
 }
 public struct Geofence : Swift.Decodable, Swift.Equatable, Swift.CustomStringConvertible {
@@ -66,7 +67,7 @@ public struct Geofence : Swift.Decodable, Swift.Equatable, Swift.CustomStringCon
   public init(from decoder: Swift.Decoder) throws
   public static func == (a: BLEAM.Geofence, b: BLEAM.Geofence) -> Swift.Bool
 }
-public enum LogLevel : Swift.String, Swift.Equatable {
+@frozen public enum LogLevel : Swift.String, Swift.Equatable {
   case debug
   case error
   case info

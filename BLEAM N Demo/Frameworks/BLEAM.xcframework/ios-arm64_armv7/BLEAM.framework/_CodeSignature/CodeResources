@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/BLEAM.swiftmodule/arm.swiftinterface</key>
 		<data>
-		bL+7fyYi9MItkkOE9cfVuXd/G8g=
+		Hze0HF05HN6FLKR9CmvJyBKpbUg=
 		</data>
 		<key>Modules/BLEAM.swiftmodule/arm.swiftmodule</key>
 		<data>
-		uyV4PxAMXU9ZL5Kb8zQcebVGqxI=
+		HAiAqpLEzeDl25LgdtW3P22Hb1k=
 		</data>
 		<key>Modules/BLEAM.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/BLEAM.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		SVHS8hl4nPxBulqkU7pUdMxsSDg=
+		SQ94Ls7k74FSG4Ys8u6dwkEsylk=
 		</data>
 		<key>Modules/BLEAM.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		/EUMEYXMJEwRkos/MSqxsrZNH1k=
+		UkGH4tg7K4y2gEA7YXFpQtxdszw=
 		</data>
 		<key>Modules/BLEAM.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/BLEAM.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		SVHS8hl4nPxBulqkU7pUdMxsSDg=
+		SQ94Ls7k74FSG4Ys8u6dwkEsylk=
 		</data>
 		<key>Modules/BLEAM.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		/EUMEYXMJEwRkos/MSqxsrZNH1k=
+		UkGH4tg7K4y2gEA7YXFpQtxdszw=
 		</data>
 		<key>Modules/BLEAM.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>Modules/BLEAM.swiftmodule/armv7-apple-ios.swiftinterface</key>
 		<data>
-		bL+7fyYi9MItkkOE9cfVuXd/G8g=
+		Hze0HF05HN6FLKR9CmvJyBKpbUg=
 		</data>
 		<key>Modules/BLEAM.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		uyV4PxAMXU9ZL5Kb8zQcebVGqxI=
+		HAiAqpLEzeDl25LgdtW3P22Hb1k=
 		</data>
 		<key>Modules/BLEAM.swiftmodule/armv7.swiftdoc</key>
 		<data>
@@ -78,11 +78,11 @@
 		</data>
 		<key>Modules/BLEAM.swiftmodule/armv7.swiftinterface</key>
 		<data>
-		bL+7fyYi9MItkkOE9cfVuXd/G8g=
+		Hze0HF05HN6FLKR9CmvJyBKpbUg=
 		</data>
 		<key>Modules/BLEAM.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		uyV4PxAMXU9ZL5Kb8zQcebVGqxI=
+		HAiAqpLEzeDl25LgdtW3P22Hb1k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -150,22 +150,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bL+7fyYi9MItkkOE9cfVuXd/G8g=
+			Hze0HF05HN6FLKR9CmvJyBKpbUg=
 			</data>
 			<key>hash2</key>
 			<data>
-			yhe0C+uOj+o0q3OoCT7DEBVIgfUbZnk5xwoyB8FQ2sM=
+			RDF/jz65UJIGnB/G/Se0F3ygFXdvbsbCzRcP54hOOWg=
 			</data>
 		</dict>
 		<key>Modules/BLEAM.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uyV4PxAMXU9ZL5Kb8zQcebVGqxI=
+			HAiAqpLEzeDl25LgdtW3P22Hb1k=
 			</data>
 			<key>hash2</key>
 			<data>
-			hf9zskXJVrIyWEr/k/59cl6UOY3KZr27Qw2zV2umI3c=
+			TEbvbDt5MLb3YlY0EyK2TDDQy57ogt5C+ycA3ApunCE=
 			</data>
 		</dict>
 		<key>Modules/BLEAM.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -183,22 +183,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SVHS8hl4nPxBulqkU7pUdMxsSDg=
+			SQ94Ls7k74FSG4Ys8u6dwkEsylk=
 			</data>
 			<key>hash2</key>
 			<data>
-			KnkAOYNDce+uS6TZlsb/LN8/Vn6UXRx5Ra722IliM4M=
+			dS1dqbNI7e2W/IcVEdsFX9lfbB0bQx/G0Azsmm92bT8=
 			</data>
 		</dict>
 		<key>Modules/BLEAM.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/EUMEYXMJEwRkos/MSqxsrZNH1k=
+			UkGH4tg7K4y2gEA7YXFpQtxdszw=
 			</data>
 			<key>hash2</key>
 			<data>
-			tAWD3W1FicUI74RgJQoPiNkU+XCmXk8Z89Qj33m645I=
+			BqqzuBoxizMWYej2JYyYpx34tyzbHF8F36VJQw8SEOU=
 			</data>
 		</dict>
 		<key>Modules/BLEAM.swiftmodule/arm64.swiftdoc</key>
@@ -216,22 +216,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SVHS8hl4nPxBulqkU7pUdMxsSDg=
+			SQ94Ls7k74FSG4Ys8u6dwkEsylk=
 			</data>
 			<key>hash2</key>
 			<data>
-			KnkAOYNDce+uS6TZlsb/LN8/Vn6UXRx5Ra722IliM4M=
+			dS1dqbNI7e2W/IcVEdsFX9lfbB0bQx/G0Azsmm92bT8=
 			</data>
 		</dict>
 		<key>Modules/BLEAM.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/EUMEYXMJEwRkos/MSqxsrZNH1k=
+			UkGH4tg7K4y2gEA7YXFpQtxdszw=
 			</data>
 			<key>hash2</key>
 			<data>
-			tAWD3W1FicUI74RgJQoPiNkU+XCmXk8Z89Qj33m645I=
+			BqqzuBoxizMWYej2JYyYpx34tyzbHF8F36VJQw8SEOU=
 			</data>
 		</dict>
 		<key>Modules/BLEAM.swiftmodule/armv7-apple-ios.swiftdoc</key>
@@ -249,22 +249,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bL+7fyYi9MItkkOE9cfVuXd/G8g=
+			Hze0HF05HN6FLKR9CmvJyBKpbUg=
 			</data>
 			<key>hash2</key>
 			<data>
-			yhe0C+uOj+o0q3OoCT7DEBVIgfUbZnk5xwoyB8FQ2sM=
+			RDF/jz65UJIGnB/G/Se0F3ygFXdvbsbCzRcP54hOOWg=
 			</data>
 		</dict>
 		<key>Modules/BLEAM.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uyV4PxAMXU9ZL5Kb8zQcebVGqxI=
+			HAiAqpLEzeDl25LgdtW3P22Hb1k=
 			</data>
 			<key>hash2</key>
 			<data>
-			hf9zskXJVrIyWEr/k/59cl6UOY3KZr27Qw2zV2umI3c=
+			TEbvbDt5MLb3YlY0EyK2TDDQy57ogt5C+ycA3ApunCE=
 			</data>
 		</dict>
 		<key>Modules/BLEAM.swiftmodule/armv7.swiftdoc</key>
@@ -282,22 +282,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bL+7fyYi9MItkkOE9cfVuXd/G8g=
+			Hze0HF05HN6FLKR9CmvJyBKpbUg=
 			</data>
 			<key>hash2</key>
 			<data>
-			yhe0C+uOj+o0q3OoCT7DEBVIgfUbZnk5xwoyB8FQ2sM=
+			RDF/jz65UJIGnB/G/Se0F3ygFXdvbsbCzRcP54hOOWg=
 			</data>
 		</dict>
 		<key>Modules/BLEAM.swiftmodule/armv7.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uyV4PxAMXU9ZL5Kb8zQcebVGqxI=
+			HAiAqpLEzeDl25LgdtW3P22Hb1k=
 			</data>
 			<key>hash2</key>
 			<data>
-			hf9zskXJVrIyWEr/k/59cl6UOY3KZr27Qw2zV2umI3c=
+			TEbvbDt5MLb3YlY0EyK2TDDQy57ogt5C+ycA3ApunCE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

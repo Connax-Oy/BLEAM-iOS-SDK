@@ -17,6 +17,16 @@
 		391A9A9B2545422A005C1CE9 /* UNNotificationSound+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A9A9A2545422A005C1CE9 /* UNNotificationSound+Extensions.swift */; };
 		391A9A9D25454242005C1CE9 /* Pristine.caf in Resources */ = {isa = PBXBuildFile; fileRef = 391A9A9C25454242005C1CE9 /* Pristine.caf */; };
 		391A9AA22545431C005C1CE9 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A9AA025454282005C1CE9 /* Int+Extensions.swift */; };
+		391A9AA525454722005C1CE9 /* GeofencesManaging.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391A9AA425454722005C1CE9 /* GeofencesManaging.storyboard */; };
+		391A9AA925454A46005C1CE9 /* GeofencesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A9AA825454A46005C1CE9 /* GeofencesTableViewController.swift */; };
+		391A9AAB25454B1D005C1CE9 /* OverviewGeofenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A9AAA25454B1D005C1CE9 /* OverviewGeofenceViewController.swift */; };
+		391A9AAE25454B82005C1CE9 /* Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A9AAD25454B82005C1CE9 /* Segues.swift */; };
+		391A9AB025454BA2005C1CE9 /* ENV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A9AAF25454BA2005C1CE9 /* ENV.swift */; };
+		391A9AB325454C99005C1CE9 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 391A9AB225454C99005C1CE9 /* Icons.xcassets */; };
+		391A9AB82545627C005C1CE9 /* Running.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391A9AB72545627C005C1CE9 /* Running.storyboard */; };
+		391A9ABB2545671C005C1CE9 /* RunningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A9ABA2545671C005C1CE9 /* RunningViewController.swift */; };
+		391A9ABE254574F9005C1CE9 /* LogsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A9ABD254574F9005C1CE9 /* LogsStorage.swift */; };
+		391A9AC025457510005C1CE9 /* LogsStorageLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391A9ABF25457510005C1CE9 /* LogsStorageLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +55,16 @@
 		391A9A9A2545422A005C1CE9 /* UNNotificationSound+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UNNotificationSound+Extensions.swift"; sourceTree = "<group>"; };
 		391A9A9C25454242005C1CE9 /* Pristine.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pristine.caf; sourceTree = "<group>"; };
 		391A9AA025454282005C1CE9 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		391A9AA425454722005C1CE9 /* GeofencesManaging.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GeofencesManaging.storyboard; sourceTree = "<group>"; };
+		391A9AA825454A46005C1CE9 /* GeofencesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofencesTableViewController.swift; sourceTree = "<group>"; };
+		391A9AAA25454B1D005C1CE9 /* OverviewGeofenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewGeofenceViewController.swift; sourceTree = "<group>"; };
+		391A9AAD25454B82005C1CE9 /* Segues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segues.swift; sourceTree = "<group>"; };
+		391A9AAF25454BA2005C1CE9 /* ENV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENV.swift; sourceTree = "<group>"; };
+		391A9AB225454C99005C1CE9 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		391A9AB72545627C005C1CE9 /* Running.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Running.storyboard; sourceTree = "<group>"; };
+		391A9ABA2545671C005C1CE9 /* RunningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningViewController.swift; sourceTree = "<group>"; };
+		391A9ABD254574F9005C1CE9 /* LogsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsStorage.swift; sourceTree = "<group>"; };
+		391A9ABF25457510005C1CE9 /* LogsStorageLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsStorageLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				391A9A3925452205005C1CE9 /* Brand.xcassets */,
+				391A9AB225454C99005C1CE9 /* Icons.xcassets */,
 				391A9A7825453141005C1CE9 /* Sounds */,
 			);
 			path = Assets;
@@ -113,8 +134,10 @@
 			children = (
 				391A9A7E254531E6005C1CE9 /* AppController.swift */,
 				391A9A8525453229005C1CE9 /* WindowSceneController.swift */,
+				391A9AA325454713005C1CE9 /* Geofences */,
 				391A9A8E25453396005C1CE9 /* LaunchScreen */,
 				391A9A9325453694005C1CE9 /* Root */,
+				391A9AB62545625A005C1CE9 /* Running */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -154,7 +177,10 @@
 		391A9A98254541F7005C1CE9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				391A9AAF25454BA2005C1CE9 /* ENV.swift */,
+				391A9AAC25454B6D005C1CE9 /* Constants */,
 				391A9A992545420F005C1CE9 /* Extensions */,
+				391A9ABC254574E7005C1CE9 /* Logger */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -166,6 +192,66 @@
 				391A9A9A2545422A005C1CE9 /* UNNotificationSound+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		391A9AA325454713005C1CE9 /* Geofences */ = {
+			isa = PBXGroup;
+			children = (
+				391A9AA425454722005C1CE9 /* GeofencesManaging.storyboard */,
+				391A9AB425454F2C005C1CE9 /* Geofences */,
+				391A9AB525454F3C005C1CE9 /* Overview */,
+			);
+			path = Geofences;
+			sourceTree = "<group>";
+		};
+		391A9AAC25454B6D005C1CE9 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				391A9AAD25454B82005C1CE9 /* Segues.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		391A9AB425454F2C005C1CE9 /* Geofences */ = {
+			isa = PBXGroup;
+			children = (
+				391A9AA825454A46005C1CE9 /* GeofencesTableViewController.swift */,
+			);
+			path = Geofences;
+			sourceTree = "<group>";
+		};
+		391A9AB525454F3C005C1CE9 /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				391A9AAA25454B1D005C1CE9 /* OverviewGeofenceViewController.swift */,
+			);
+			path = Overview;
+			sourceTree = "<group>";
+		};
+		391A9AB62545625A005C1CE9 /* Running */ = {
+			isa = PBXGroup;
+			children = (
+				391A9AB72545627C005C1CE9 /* Running.storyboard */,
+				391A9AB925456710005C1CE9 /* Running */,
+			);
+			path = Running;
+			sourceTree = "<group>";
+		};
+		391A9AB925456710005C1CE9 /* Running */ = {
+			isa = PBXGroup;
+			children = (
+				391A9ABA2545671C005C1CE9 /* RunningViewController.swift */,
+			);
+			path = Running;
+			sourceTree = "<group>";
+		};
+		391A9ABC254574E7005C1CE9 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				391A9ABD254574F9005C1CE9 /* LogsStorage.swift */,
+				391A9ABF25457510005C1CE9 /* LogsStorageLogger.swift */,
+			);
+			path = Logger;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +315,10 @@
 			files = (
 				391A9A3D25452205005C1CE9 /* LaunchScreen.storyboard in Resources */,
 				391A9A3A25452205005C1CE9 /* Brand.xcassets in Resources */,
+				391A9AB82545627C005C1CE9 /* Running.storyboard in Resources */,
 				391A9A9D25454242005C1CE9 /* Pristine.caf in Resources */,
+				391A9AA525454722005C1CE9 /* GeofencesManaging.storyboard in Resources */,
+				391A9AB325454C99005C1CE9 /* Icons.xcassets in Resources */,
 				391A9A3825452202005C1CE9 /* Root.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,10 +330,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				391A9AA925454A46005C1CE9 /* GeofencesTableViewController.swift in Sources */,
 				391A9A8625453229005C1CE9 /* WindowSceneController.swift in Sources */,
 				391A9AA22545431C005C1CE9 /* Int+Extensions.swift in Sources */,
+				391A9AAE25454B82005C1CE9 /* Segues.swift in Sources */,
+				391A9AC025457510005C1CE9 /* LogsStorageLogger.swift in Sources */,
+				391A9ABE254574F9005C1CE9 /* LogsStorage.swift in Sources */,
 				391A9A9B2545422A005C1CE9 /* UNNotificationSound+Extensions.swift in Sources */,
+				391A9AB025454BA2005C1CE9 /* ENV.swift in Sources */,
 				391A9A7F254531E6005C1CE9 /* AppController.swift in Sources */,
+				391A9ABB2545671C005C1CE9 /* RunningViewController.swift in Sources */,
+				391A9AAB25454B1D005C1CE9 /* OverviewGeofenceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

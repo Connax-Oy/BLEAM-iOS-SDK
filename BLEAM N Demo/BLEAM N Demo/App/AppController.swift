@@ -8,6 +8,7 @@
 
 import BLEAM
 import UIKit
+import UserNotifications
 
 @main
 final class AppController: NSObject, UIApplicationDelegate, BLEAM.Delegate {
@@ -19,16 +20,15 @@ final class AppController: NSObject, UIApplicationDelegate, BLEAM.Delegate {
       _ application: UIApplication,
       willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
    ) -> Bool {
-#if DEBUG
-      let appID = "08b3a9ca-5a65-4e1b-a590-7ccb154d0a00"
-      let appSecret = "Kn7lDKNQJJIdUoZvDOYXL5SFXyNP7shu3PjuCxRcy0IclyrY11v11FbeMbtl9s1O"
-#else
-      let appID = "f03b4cf4-c55d-44cc-b5d1-f9dca2ae5585"
-      let appSecret = "d8jFmUWR188VD4BKoKt8rTIYvd2Y2OfiElL4vNltbeDe5eLRCqian1EYbn0xqqcW"
-#endif
+      let configuration = Configuration(
+         appID: ENV.appID,
+         appSecret: ENV.appSecret,
+         useDebugURL: ENV.useDebugURL
+      )
+      configuration.logger = LogsStorageLogger()
 
-      let configuration = Configuration(appID: appID, appSecret: appSecret)
       let sdk = SDK(configuration: configuration, delegate: self)
+      SDK.setShared(sdk)
 
       sdk.processLaunchOptions(launchOptions)
 
@@ -38,7 +38,8 @@ final class AppController: NSObject, UIApplicationDelegate, BLEAM.Delegate {
          application.setMinimumBackgroundFetchInterval(1.days)
       }
 
-      SDK.setShared(sdk)
+      let options: UNAuthorizationOptions = [.alert, .sound]
+      UNUserNotificationCenter.current().requestAuthorization(options: options) { _, _ in }
 
       return true
    }
@@ -47,7 +48,7 @@ final class AppController: NSObject, UIApplicationDelegate, BLEAM.Delegate {
 
    func applicationDidBecomeActive(_ application: UIApplication) {
       if #available(iOS 13.0, *) {
-         let sdk = SDK.shared()
+         let sdk: SDK = .shared()
          sdk.startBackgroundSynchronization()
       }
    }
@@ -58,7 +59,7 @@ final class AppController: NSObject, UIApplicationDelegate, BLEAM.Delegate {
       _ application: UIApplication,
       performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void
    ) {
-      let sdk = SDK.shared()
+      let sdk: SDK = .shared()
       sdk.synchronizeGeofences { result in
          switch result {
             case .success:
@@ -72,4 +73,46 @@ final class AppController: NSObject, UIApplicationDelegate, BLEAM.Delegate {
    // MARK: - BLEAM.Delegate
 
    func bleamSDK(_ sdk: SDK, didPredict position: Int, in geofence: Geofence) { }
+
+   func bleamSDK(_ sdk: SDK, didEnter geofence: Geofence) {
+      UNUserNotificationCenter.current().getNotificationSettings { settings in
+         guard settings.authorizationStatus == .authorized else {
+            return
+         }
+
+         let content = UNMutableNotificationContent()
+         content.title = "You Entered Geofence"
+         content.body = "Info: \(geofence)"
+         content.sound = .pristine
+         content.badge = 0
+
+         let request = UNNotificationRequest(
+            identifier: "io.connax.geofencesMonitoring",
+            content: content,
+            trigger: nil
+         )
+         UNUserNotificationCenter.current().add(request)
+      }
+   }
+
+   func bleamSDK(_ sdk: SDK, didExit geofence: Geofence) {
+      UNUserNotificationCenter.current().getNotificationSettings { settings in
+         guard settings.authorizationStatus == .authorized else {
+            return
+         }
+
+         let content = UNMutableNotificationContent()
+         content.title = "You Exited Geofence"
+         content.body = "Info: \(geofence)"
+         content.sound = .pristine
+         content.badge = 0
+
+         let request = UNNotificationRequest(
+            identifier: "io.connax.geofencesMonitoring",
+            content: content,
+            trigger: nil
+         )
+         UNUserNotificationCenter.current().add(request)
+      }
+   }
 }

@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/BLEAM.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		QpAp1tuzZHCgD6/1A5bL04etHZ8=
+		OkbkAExNJ4v+0xEOmj63VDibf6s=
 		</data>
 		<key>Modules/BLEAM.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		etVKoQMewvwTOYc9mHLPpzG33CU=
+		mI603kS5qMmo1wN9sg1V8417fIs=
 		</data>
 		<key>Modules/BLEAM.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/BLEAM.swiftmodule/i386.swiftinterface</key>
 		<data>
-		QpAp1tuzZHCgD6/1A5bL04etHZ8=
+		OkbkAExNJ4v+0xEOmj63VDibf6s=
 		</data>
 		<key>Modules/BLEAM.swiftmodule/i386.swiftmodule</key>
 		<data>
-		etVKoQMewvwTOYc9mHLPpzG33CU=
+		mI603kS5qMmo1wN9sg1V8417fIs=
 		</data>
 		<key>Modules/BLEAM.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/BLEAM.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		kUfbNAm/lKy449m90BR4y/k7z+I=
+		nry2Z/DlbGmCDv1kBqha5l+oXpY=
 		</data>
 		<key>Modules/BLEAM.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		549jmuGKRcnvCsw2ZW++G4CoQJE=
+		kXSvgtQjL/lsUwm56jCqlOFMWuw=
 		</data>
 		<key>Modules/BLEAM.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>Modules/BLEAM.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		kUfbNAm/lKy449m90BR4y/k7z+I=
+		nry2Z/DlbGmCDv1kBqha5l+oXpY=
 		</data>
 		<key>Modules/BLEAM.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		549jmuGKRcnvCsw2ZW++G4CoQJE=
+		kXSvgtQjL/lsUwm56jCqlOFMWuw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -138,22 +138,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QpAp1tuzZHCgD6/1A5bL04etHZ8=
+			OkbkAExNJ4v+0xEOmj63VDibf6s=
 			</data>
 			<key>hash2</key>
 			<data>
-			OFKQjmHAyTJKXLOBfdhpvpqTA8l22AmzOnVx5pjxHT8=
+			LFlggtAP+cnMBs0qAnOAlj/BdqR3XuexMQmsvKOFbcI=
 			</data>
 		</dict>
 		<key>Modules/BLEAM.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			etVKoQMewvwTOYc9mHLPpzG33CU=
+			mI603kS5qMmo1wN9sg1V8417fIs=
 			</data>
 			<key>hash2</key>
 			<data>
-			ebLRTB1EeyTy+EH7SSB6w6PIeI2dEBbD19baEzRaABQ=
+			nYtmoeJ4he2KPik48CtLRk+t0X3leTE1OxayBTz9zr4=
 			</data>
 		</dict>
 		<key>Modules/BLEAM.swiftmodule/i386.swiftdoc</key>
@@ -171,22 +171,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QpAp1tuzZHCgD6/1A5bL04etHZ8=
+			OkbkAExNJ4v+0xEOmj63VDibf6s=
 			</data>
 			<key>hash2</key>
 			<data>
-			OFKQjmHAyTJKXLOBfdhpvpqTA8l22AmzOnVx5pjxHT8=
+			LFlggtAP+cnMBs0qAnOAlj/BdqR3XuexMQmsvKOFbcI=
 			</data>
 		</dict>
 		<key>Modules/BLEAM.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			etVKoQMewvwTOYc9mHLPpzG33CU=
+			mI603kS5qMmo1wN9sg1V8417fIs=
 			</data>
 			<key>hash2</key>
 			<data>
-			ebLRTB1EeyTy+EH7SSB6w6PIeI2dEBbD19baEzRaABQ=
+			nYtmoeJ4he2KPik48CtLRk+t0X3leTE1OxayBTz9zr4=
 			</data>
 		</dict>
 		<key>Modules/BLEAM.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -204,22 +204,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kUfbNAm/lKy449m90BR4y/k7z+I=
+			nry2Z/DlbGmCDv1kBqha5l+oXpY=
 			</data>
 			<key>hash2</key>
 			<data>
-			MPsqOnvWrHmKNsOb8m/xDrUrJGdd/UktzDlLnau03P8=
+			CCXtW/LrYVJ+rfC6Y0Tqj2AJ11pMEOoePPO5RdyvVjc=
 			</data>
 		</dict>
 		<key>Modules/BLEAM.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			549jmuGKRcnvCsw2ZW++G4CoQJE=
+			kXSvgtQjL/lsUwm56jCqlOFMWuw=
 			</data>
 			<key>hash2</key>
 			<data>
-			qgPRsBC/KvVgawD0R1sSdL7cDtZdFRwJuhTJco+LvI0=
+			1XL2IpO+kxYdcFp+fkIMU+2L/fjZkw4Kn7sqsCFD8EE=
 			</data>
 		</dict>
 		<key>Modules/BLEAM.swiftmodule/x86_64.swiftdoc</key>
@@ -237,22 +237,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kUfbNAm/lKy449m90BR4y/k7z+I=
+			nry2Z/DlbGmCDv1kBqha5l+oXpY=
 			</data>
 			<key>hash2</key>
 			<data>
-			MPsqOnvWrHmKNsOb8m/xDrUrJGdd/UktzDlLnau03P8=
+			CCXtW/LrYVJ+rfC6Y0Tqj2AJ11pMEOoePPO5RdyvVjc=
 			</data>
 		</dict>
 		<key>Modules/BLEAM.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			549jmuGKRcnvCsw2ZW++G4CoQJE=
+			kXSvgtQjL/lsUwm56jCqlOFMWuw=
 			</data>
 			<key>hash2</key>
 			<data>
-			qgPRsBC/KvVgawD0R1sSdL7cDtZdFRwJuhTJco+LvI0=
+			1XL2IpO+kxYdcFp+fkIMU+2L/fjZkw4Kn7sqsCFD8EE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

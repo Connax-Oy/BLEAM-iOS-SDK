@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IzL-LP-byG">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Running-->
+        <scene sceneID="W8l-B5-7EX">
+            <objects>
+                <navigationController id="IzL-LP-byG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Running" image="Bluetooth" id="E7F-Df-1UP"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aYJ-Am-rvG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="UW0-jZ-U9C" kind="relationship" relationship="rootViewController" id="Ahv-31-OFL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aDV-xK-dhp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-54" y="147"/>
+        </scene>
+        <!--Running-->
+        <scene sceneID="BTQ-nm-evP">
+            <objects>
+                <viewController id="UW0-jZ-U9C" customClass="RunningViewController" customModule="BLEAM_N_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Fe-zl-qgr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vTQ-6T-qRB">
+                                <rect key="frame" x="8" y="52" width="359" height="558"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="xGB-85-PU7">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="60"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="IWP-qs-b2g">
+                                                <rect key="frame" x="0.0" y="0.0" width="112" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOS-2j-UaE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="112" height="30"/>
+                                                        <state key="normal" title="Start Monitoring"/>
+                                                        <connections>
+                                                            <action selector="startStopMonitoringButtonDidTouchUpInside" destination="UW0-jZ-U9C" eventType="touchUpInside" id="sVT-qH-x0c"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pa-aR-5bT">
+                                                        <rect key="frame" x="0.0" y="30" width="73" height="30"/>
+                                                        <state key="normal" title="Clear Logs"/>
+                                                        <connections>
+                                                            <action selector="clearLogsButtonDidTouchUpInside" destination="UW0-jZ-U9C" eventType="touchUpInside" id="cUQ-Gg-R1P"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="eXd-vA-aRH">
+                                                <rect key="frame" x="166" y="0.0" width="193" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYD-TY-uH4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="178" height="30"/>
+                                                        <state key="normal" title="Start One-Off by Location"/>
+                                                        <connections>
+                                                            <action selector="startOneOffByLocationButtonDidTouchUpInside" destination="UW0-jZ-U9C" eventType="touchUpInside" id="rOJ-I2-AxT"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akM-0x-iXf">
+                                                        <rect key="frame" x="0.0" y="30" width="193" height="30"/>
+                                                        <state key="normal" title="Start One-Off by External ID"/>
+                                                        <connections>
+                                                            <action selector="startOneOffByExternalIDButtonDidTouchUpInside" destination="UW0-jZ-U9C" eventType="touchUpInside" id="ldN-zb-j9S"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hdE-d9-977">
+                                        <rect key="frame" x="0.0" y="76" width="359" height="482"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ts6-mh-tS7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vTQ-6T-qRB" firstAttribute="top" secondItem="ts6-mh-tS7" secondAttribute="top" constant="8" id="2D3-3k-qPb"/>
+                            <constraint firstItem="vTQ-6T-qRB" firstAttribute="trailing" secondItem="ts6-mh-tS7" secondAttribute="trailing" constant="-8" id="Qpt-1f-ghd"/>
+                            <constraint firstItem="vTQ-6T-qRB" firstAttribute="leading" secondItem="ts6-mh-tS7" secondAttribute="leading" constant="8" id="eME-aC-Mlc"/>
+                            <constraint firstItem="ts6-mh-tS7" firstAttribute="bottom" secondItem="vTQ-6T-qRB" secondAttribute="bottom" constant="8" id="rQu-qD-W20"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Running" id="Lwm-ib-TZI"/>
+                    <connections>
+                        <outlet property="logsTextView" destination="hdE-d9-977" id="JY7-eP-HJy"/>
+                        <outlet property="startStopMonitoringButton" destination="bOS-2j-UaE" id="P4n-cs-xp1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lhT-pW-zTm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="782" y="146"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bluetooth" width="25" height="25"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
